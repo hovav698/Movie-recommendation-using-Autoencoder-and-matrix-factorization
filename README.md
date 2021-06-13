@@ -10,6 +10,6 @@ I will implement 2 algorithms for solving the problem. The first algorithm is ma
 
 **Data Preperation**
 
-The original data is divided into very long list of tuples - each tuple consist of user ID, movie ID and the corresponding rating. for using the algorithm I will need to convert it to a different data structure that allow to get movie score directly from the userID and movieID indexes. For the Matrix Factorization algorithm I will conver the data and put it into dictionaries that will ease the query lookup. For the autorec alogorithm I will use 
+The original data is divided into very long list of tuples - each tuple consist of user ID, movie ID and the corresponding rating. For using the algorithm I will need to convert it to a different data structure that will allow me to get the movie rating directly from the userID and movieID indexes. I won't create a normal 2D matrix of the ratings because it will take too much space and almost all the rating values will be empty, since the each user haven't rated most of the movies. For the Matrix Factorization algorithm I will conver the data and put it into dictionaries that will ease the query lookup. For the autorec alogorithm I will use the spicy sparse matrix - it stores the a sparse matrices in efficient way and it will allow me to use 2D matrix for representing the data.
 
 **Matrix Factorization**
