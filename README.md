@@ -26,7 +26,8 @@ The autorec algorithm is a simple autoenconder. The model input is a vector from
 
 
 **Result**
-The result of the two models were very close, however the training of the autoncoder model was much faster.
+
+The result of the two models were very close, however the training time of the autoncoder model was much faster.
 
 
 
