@@ -2,7 +2,7 @@ This repository contains pytorch implementation of two Recommender System algori
 
 **Dataset description, and what is the goal**
 
-The Dataset consist of a very large amount of users (200K+) and and movies (40K+), and it's corresponding rating of the user to the the movie. The goal is to build a model that can predict what is the rating of movies that the user haven't seen yet. by doing that we can recommended the users movies that there is a big chance they will like.
+The Dataset consist of a very large amount of users (200K+) and and movies (40K+), and the corresponding rating of the user to the movie. The goal is to build a model that can predict what is the rating of movies that the user haven't seen yet. by doing that we can recommended the users movies that there is a big chance they will like.
 
 **The algorithms**
 
@@ -18,7 +18,7 @@ The basic behind matrix factorization is trying to reconstract the original movi
 
 <img width="500" alt="matfac" src="https://user-images.githubusercontent.com/71300410/121802495-43f6f580-cc45-11eb-98f8-ab646dddd519.PNG">
 
-The loss function will be defined as the difference between the original matrix and the decompositioned matrix. I will use the expectation maximization algorithm for finding the relevant values for the rating prediction. All the math is explained in the following [paper](https://papers.nips.cc/paper/2007/file/d7322ed717dedf1eb4e6e52a37ea7bcd-Paper.pdf).
+The loss function will be defined as the squqare root distance between the original matrix and the decomposited matrix. I will use the expectation maximization algorithm for finding the relevant values for the rating prediction. All the math is explained in the following [paper](https://papers.nips.cc/paper/2007/file/d7322ed717dedf1eb4e6e52a37ea7bcd-Paper.pdf).
 
 **AutoRec Algorithm**
 
